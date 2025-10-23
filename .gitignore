@@ -10,4 +10,4 @@ wheels/
 .venv
 
 # SQLite DB
-todos.db
+*.db
