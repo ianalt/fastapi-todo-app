@@ -2,6 +2,7 @@ from sqlalchemy import Column, Integer, String, Boolean, ForeignKey
 
 from TodoApp.database import Base
 
+
 class User(Base):
     __tablename__ = "users"
 
@@ -13,9 +14,7 @@ class User(Base):
     hashed_password = Column(String)
     is_active = Column(Boolean, default=True)
     role = Column(String)
-
-
-
+    phone_number = Column(String)
 
 
 class Todo(Base):
