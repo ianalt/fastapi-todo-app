@@ -127,7 +127,8 @@ async def register_user(db: db_dependency,
         last_name=body_req.last_name,
         role=body_req.role,
         hashed_password=bcrypt_context.hash(body_req.password),
-        is_active=True
+        is_active=True,
+        phone_number=body_req.phone_number,
     )
 
     db.add(created_user)
